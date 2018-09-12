@@ -1,0 +1,24 @@
+{
+  "name": "react-svg-components",
+  "version": "1.0.0",
+  "description": "A convenient set of SVG-based components for web apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercuriex/react-svg-components.git"
+  },
+  "author": "Alex Staples",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mercuriex/react-svg-components/issues"
+  },
+  "homepage": "https://github.com/mercuriex/react-svg-components#readme",
+  "dependencies": {
+    "react": "^16.5.0"
+  }
+}
