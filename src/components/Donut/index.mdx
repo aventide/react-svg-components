@@ -1,0 +1,57 @@
+---
+name: Donut
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Donut from "./index";
+
+# Donut
+
+### Flexible, text containing circles of all shapes, colors, and thicknesses!
+
+<PropsTable of={Donut} />
+
+## Text content
+<Playground>
+    <Donut size={28} strokeWidth={3} color="black" circled/>
+    <Donut size={28} strokeWidth={3} color="black" text={3} circled/>
+</Playground>
+
+
+## Circle outline
+<Playground>
+    <Donut size={28} strokeWidth={4} color="red" text={3} circled/>
+    <Donut size={28} strokeWidth={3} color="yellow" text={3} circled/>
+    <Donut size={28} strokeWidth={2} color="green" text={3} circled/>
+    <Donut size={28} strokeWidth={1} color="blue" text={3} circled/>
+    <Donut size={28} strokeWidth={0} color="purple" text={3}/>
+</Playground>
+
+## Size
+<Playground>
+    <Donut size={50} strokeWidth={3} color="black" text={3} circled/>
+    <Donut size={40} strokeWidth={3} color="black" text={3} circled/>
+    <Donut size={30} strokeWidth={3} color="black" text={3} circled/>
+    <Donut size={20} strokeWidth={3} color="black" text={3} circled/>
+    <Donut size={10} strokeWidth={3} color="black" text={3} circled/>
+</Playground>
+
+## Step progress
+<Playground>
+    <Donut size={28} strokeWidth={3} color="black" text={3} progress={{
+        slices: 8,
+        step: 3,
+        color: 'orange'
+    }}
+    circled
+    />
+    <Donut size={34} strokeWidth={2} color="red" text={3} progress={{
+            slices: 8,
+            step: 5,
+            color: 'lightgreen',
+            strokeWidth: '4'
+        }}
+        circled
+        />
+</Playground>
